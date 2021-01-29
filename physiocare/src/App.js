@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'; 
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import FrontPage from './components/FrontPage/FrontPage';
+import NotFound from './components/NotFound/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+              <div className ="home-page">
+                <img 
+                      alt="background"
+                      className="background" 
+                      src="assets/img/background.jpg"
+                      style={{"position":"fixed", "zIndex":-1, objectFit:'cover', height: '100%', width: '100%'}}
+                  />
+                  <FrontPage/>
+              </div>
+          </Route>
+          <Route exact path="/run">
+              <div className ="home-page">
+                  <FrontPage/>
+              </div>
+          </Route>
+          <Route>
+              <NotFound/>
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 
