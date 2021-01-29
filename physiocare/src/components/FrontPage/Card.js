@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
+import './Card.css'
 
 export default class Card extends Component {
     
     render() {
         const title = "Auto Mode";
         return (
-            <div class ="text-center card align-middle"> 
-                <h2>
+            <div class ="text-center"> 
+                <h2 class= " align-middle">
                     {this.props.title} 
                 </h2>
                 <span>
-                        <i class="icofont-automation"></i>
+                        <i class = {"ic "+ this.props.ic} ></i>
                 </span>
             </div>
             
