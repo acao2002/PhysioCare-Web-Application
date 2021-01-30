@@ -21,14 +21,14 @@ export default class FrontPage extends Component {
                 </div>
                 <div className = "container">
                     <div className = "row ">
-                        <div class = "col-lg-5 mt-5 card mx-auto cc" style ={{color:"white", backgroundColor:"lightgreen", height:"500px"}}>
+                        <div class = "col-lg-5 mt-5 card mx-auto" style ={{color:"white", backgroundColor:"lightgreen", height:"500px"}}>
                             <Link to="/auto" style ={{ textDecoration:"none"}}>
                                 <Card  title ="Auto Mode" ic = {ic1}/>
                             </Link>
                             
                         </div>
 
-                        <div class = "col-lg-5 mt-5  card  mx-auto cc" style ={{color:"white", backgroundColor:"lightgreen", height:"500px"}}>
+                        <div class = "col-lg-5 mt-5  card  mx-auto" style ={{color:"white", backgroundColor:"lightgreen", height:"500px"}}>
                             <Link to="/manual" style ={{textDecoration:"none"}}>
                                 <Card  title ="Manual Mode" ic ={ic2}/>
                             </Link>
