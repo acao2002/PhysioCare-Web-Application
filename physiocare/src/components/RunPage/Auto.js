@@ -4,9 +4,37 @@ import './Auto.css'
 
 
 export default class Auto extends Component {
+    state = {
+        action: "",
+        duration: 0,
+    }
+    
+    setAction = act => {
+        if (this.state.action !== act){
+            this.setState(() => {
+                return {action:act}
+            })
+        }
+        else {
+            this.setState(() => {
+                return {action:""}
+            }) 
+        }
+
+        console.log(this.state.action)
+    }
     render() {
-        const action = "";
-        const duration = 0;
+      
+        const i1 = "assets/img/actions/a1.png";
+        const i2 = "assets/img/actions/a2.png";
+        const i3 = "assets/img/actions/a3.png";
+        const i4 = "assets/img/actions/a4.png";
+        const i5 = "assets/img/actions/a5.png";
+        const i6 = "assets/img/actions/a6.png";
+        const time = "assets/img/time.png";
+
+
+
         return (
             <div>
                 <div className = "container text-center">
@@ -19,39 +47,86 @@ export default class Auto extends Component {
                     </div>
                 </div>
                 <div className = "container">
+                    <div className ="row">
+                        <div className = "col-lg-5 mt-2 text-center  mx-auto">
+                            <h3 style ={{color:"purple"}}> Select your action</h3>
+                        </div>
+                        <div className = "col-lg-5 mt-2 text-center  mx-auto">
+                            <h3 style ={{color:"purple"}}> Select duration</h3>
+                        </div>
+                    </div>
+                    
                     <div className = "row ">
-                        <div class = "col-lg-5 mt-5 mx-auto" style ={{color:"white", backgroundColor:"lightgreen", height:"500px"}}>
+                        <div class = "col-lg-5 mt-3  mx-auto" style ={{color:"white", backgroundColor:"lightblue", height:"500px"}}>
+                            <div className ="container-fluid my-auto mx-auto">
+                                <div className ="row" style = {{ height:"166px" }}>
+                                    <div className = {this.state.action ==="calve"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('calve')}} >
+                                        <h5 className ="cc"> Calve stretch </h5>
+                                        <img src = {i4} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                    <div className ={this.state.action ==="thigh"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('thigh')}}>
+                                        <h5 className ="cc"> Thigh fold </h5>
+                                        <img src = {i2} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                </div>
+                                <div className ="row" style = {{ height:"166px"}}>
+                                    <div className ={this.state.action ==="leg"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('leg')}}>
+                                        <h5 className ="cc"> Straight leg raise </h5>
+                                        <img src = {i3} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                    <div className ={this.state.action ==="walk"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('walk')}}>
+                                        <h5 className ="cc"> Walking </h5>
+                                        <img src = {i1} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                </div>
+                                <div className ="row" style = {{ height:"166px"}}>
+                                    <div className ={this.state.action ==="gait"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('gait')}}>
+                                        <h5 className ="cc">  Gait assist </h5>
+                                        <img src = {i5} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                    <div className ={this.state.action ==="knee"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction("knee")}} >
+                                        <h5 className ="cc"> Knee extensions </h5>
+                                        <img src = {i6} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-lg-5 mt-3 mx-auto" style ={{color:"white", backgroundColor:"lightblue", height:"500px"}}>
                             <div className ="container-fluid my-auto mx-auto">
                                 <div className ="row" style = {{ height:"166px" }}>
                                     <div className ="col text-center cc border border-secondary" >
-                                        <h5 className ="cc"> Calve stretch </h5>
+                                        <h5 className ="cc"> 30 minutes </h5>
+                                        <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                     <div className ="col text-center cc border border-secondary">
-                                        <h5 className ="cc"> Thigh fold </h5>
-                                    </div>
-                                </div>
-                                <div className ="row" style = {{ height:"166px"}}>
-                                    <div className ="col text-center cc border border-secondary">
-                                        <h5 className ="cc"> Straight leg raise </h5>
-                                    </div>
-                                    <div className ="col text-center cc border border-secondary">
-                                        <h5 className ="cc"> Walking </h5>
+                                        <h5 className ="cc"> 60 minutes  </h5>
+                                        <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                 </div>
                                 <div className ="row" style = {{ height:"166px"}}>
                                     <div className ="col text-center cc border border-secondary">
-                                        <h5 className ="cc">  Gait assist </h5>
+                                        <h5 className ="cc"> 90 minutes </h5>
+                                        <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                    <div className ="col text-center cc border border-secondary">
+                                        <h5 className ="cc"> 120 minutes </h5>
+                                        <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
+                                    </div>
+                                </div>
+                                <div className ="row" style = {{ height:"166px"}}>
+                                    <div className ="col text-center cc border border-secondary">
+                                        <h5 className ="cc">  150 minutes </h5>
+                                        <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                     <div className ="col text-center cc border border-secondary" >
-                                        <h5 className ="cc"> Knee extensions </h5>
+                                        <h5 className ="cc"> 180 minutes </h5>
+                                        <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class = "col-lg-5 mt-5  mx-auto" style ={{color:"white", backgroundColor:"lightgreen", height:"500px"}}>
-
-                        </div>
+                      
                     </div>    
                 </div>
             </div>
