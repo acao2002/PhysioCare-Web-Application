@@ -75,31 +75,31 @@ export default class Auto extends Component {
                         <div class = "col-lg-5 mt-3  mx-auto" style ={{color:"white", backgroundColor:"lightblue", height:"500px"}}>
                             <div className ="container-fluid my-auto mx-auto">
                                 <div className ="row" style = {{ height:"166px" }}>
-                                    <div className = {this.state.action ==="calve"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('calve')}} >
+                                    <div className = {this.state.action ==="calve"? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setAction('calve')}} >
                                         <h5 className ="cc"> Calve stretch </h5>
                                         <img src = {i4} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
-                                    <div className ={this.state.action ==="thigh"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('thigh')}}>
+                                    <div className ={this.state.action ==="thigh"? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setAction('thigh')}}>
                                         <h5 className ="cc"> Thigh fold </h5>
                                         <img src = {i2} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                 </div>
                                 <div className ="row" style = {{ height:"166px"}}>
-                                    <div className ={this.state.action ==="leg"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('leg')}}>
+                                    <div className ={this.state.action ==="leg"? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setAction('leg')}}>
                                         <h5 className ="cc"> Straight leg raise </h5>
                                         <img src = {i3} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
-                                    <div className ={this.state.action ==="walk"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('walk')}}>
+                                    <div className ={this.state.action ==="walk"? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setAction('walk')}}>
                                         <h5 className ="cc"> Walking </h5>
                                         <img src = {i1} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                 </div>
                                 <div className ="row" style = {{ height:"166px"}}>
-                                    <div className ={this.state.action ==="gait"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction('gait')}}>
+                                    <div className ={this.state.action ==="gait"? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setAction('gait')}}>
                                         <h5 className ="cc">  Gait assist </h5>
                                         <img src = {i5} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
-                                    <div className ={this.state.action ==="knee"? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setAction("knee")}} >
+                                    <div className ={this.state.action ==="knee"? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setAction("knee")}} >
                                         <h5 className ="cc"> Knee extensions </h5>
                                         <img src = {i6} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
@@ -109,31 +109,31 @@ export default class Auto extends Component {
                         <div class = "col-lg-5 mt-3 mx-auto" style ={{color:"white", backgroundColor:"lightblue", height:"500px"}}>
                             <div className ="container-fluid my-auto mx-auto">
                                 <div className ="row" style = {{ height:"166px" }}>
-                                    <div className ={this.state.duration ===30? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setDuration(30)}}>
+                                    <div className ={this.state.duration ===30? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setDuration(30)}}>
                                         <h5 className ="cc"> 30 minutes </h5>
                                         <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
-                                    <div className ={this.state.duration ===60? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setDuration(60)}}>
+                                    <div className ={this.state.duration ===60? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setDuration(60)}}>
                                         <h5 className ="cc"> 60 minutes  </h5>
                                         <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                 </div>
                                 <div className ="row" style = {{ height:"166px"}}>
-                                    <div className ={this.state.duration ===90? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setDuration(90)}}>
+                                    <div className ={this.state.duration ===90? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setDuration(90)}}>
                                         <h5 className ="cc"> 90 minutes </h5>
                                         <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
-                                    <div className ={this.state.duration ===120? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setDuration(120)}}>
+                                    <div className ={this.state.duration ===120? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setDuration(120)}}>
                                         <h5 className ="cc"> 120 minutes </h5>
                                         <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
                                 </div>
                                 <div className ="row" style = {{ height:"166px"}}>
-                                    <div className ={this.state.duration ===150? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setDuration(150)}}>
+                                    <div className ={this.state.duration ===150? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setDuration(150)}}>
                                         <h5 className ="cc">  150 minutes </h5>
                                         <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>
-                                    <div className ={this.state.duration === 180? "col text-center ccc border border-secondary":"col text-center cc border border-secondary"} onClick = {()=> {this.setDuration(180)}} >
+                                    <div className ={this.state.duration === 180? "col text-center aaa border border-secondary":"col text-center aa border border-secondary"} onClick = {()=> {this.setDuration(180)}} >
                                         <h5 className ="cc"> 180 minutes </h5>
                                         <img src = {time} style ={{objectFit:"contain", height:"30%", width: "25%"}}></img>
                                     </div>

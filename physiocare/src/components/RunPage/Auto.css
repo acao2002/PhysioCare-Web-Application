@@ -1,4 +1,19 @@
 
+.aa {
+    padding:15px;
+   
+}
+.aa:hover {
+    opacity: 70%;
+    cursor:pointer;
+}
+.aaa {
+    padding:15px;
+    opacity: 70%;
+    color:black;
+    font-weight: bold;
+    background-color: rgb(15, 161, 142);
+}
 .cc {
     padding:15px;
    

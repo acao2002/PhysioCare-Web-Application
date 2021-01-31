@@ -1,5 +1,5 @@
 import React from 'react'; 
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 import FrontPage from './components/FrontPage/FrontPage';
 import Manual from './components/RunPage/Manual';
 import NotFound from './components/NotFound/NotFound';
@@ -8,9 +8,20 @@ import Auto from './components/RunPage/Auto';
 function App() {
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
-          <Route exact path="/PhysioCare-Web-Application">
+          <Route exact path="/">
+              <div className ="home-page">
+                <img 
+                      alt="background"
+                      className="background" 
+                      src="assets/img/background.jpg"
+                      style={{"position":"fixed", "zIndex":-1, objectFit:'cover', height: '100%', width: '100%'}}
+                  />
+                  <FrontPage/>
+              </div>
+          </Route>
+          <Route exact path="/index.html">
               <div className ="home-page">
                 <img 
                       alt="background"
@@ -47,7 +58,7 @@ function App() {
               <NotFound/>
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </React.Fragment>
   );
 }
