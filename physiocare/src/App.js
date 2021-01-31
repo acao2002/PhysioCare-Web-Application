@@ -10,7 +10,7 @@ function App() {
     <React.Fragment>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/PhysioCare-Web-Application">
               <div className ="home-page">
                 <img 
                       alt="background"
