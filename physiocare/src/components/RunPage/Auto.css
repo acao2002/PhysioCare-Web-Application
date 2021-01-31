@@ -10,5 +10,7 @@
 .ccc {
     padding:15px;
     opacity: 70%;
-    color:black
+    color:black;
+    font-weight: bold;
+    background-color: rgb(15, 161, 142);
 }
